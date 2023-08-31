@@ -69,3 +69,6 @@ Then("I should see a search bar", function (this: IDuckDuckGoWorld) {
 
   assert.deepEqual({}, {});
 });
+Then(/^Say "([^"]*)"$/, function (this: IDuckDuckGoWorld, message: string) {
+  cy.log('said', message)
+});
