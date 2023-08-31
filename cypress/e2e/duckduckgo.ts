@@ -1,6 +1,6 @@
-import {Then, When, Before, Given} from "@badeball/cypress-cucumber-preprocessor";
+import {Before, Given, Then, When} from "@badeball/cypress-cucumber-preprocessor";
+import {IBehaviouralWorld} from "./bdd/behavioural-world";
 
-export type IBehaviouralWorld<Type extends {}> = Type & Mocha.Context;
 export type IDuckDuckGoWorld = IBehaviouralWorld<{
   duckDuckGo: {
     visited: boolean;
