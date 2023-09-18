@@ -4,6 +4,6 @@
     "module": "commonjs",
     "lib": ["es6", "dom", "esnext"],
     "esModuleInterop": true,
-    "moduleResolution": "node16"
+    "moduleResolution": "node"
   }
 }

@@ -11,14 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "latest",
-    "@bahmutov/cypress-esbuild-preprocessor": "latest",
-    "cypress": "^12.17.2",
-    "expect": "^29.6.2",
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.2.0",
+    "expect": "^29.7.0",
     "lodash": "^4.17.21",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/cypress-cucumber-preprocessor": "^4.0.1"
+    "@types/cypress-cucumber-preprocessor": "^4.0.2"
   }
 }
