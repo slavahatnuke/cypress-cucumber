@@ -30,8 +30,13 @@ Given(/^Duck Duck go world$/, function (this: IDuckDuckGoWorld) {
       url: 'https://api.github.com/repos/cypress-io/cypress/commits?per_page=1&sha=master',
     }).then(async (response) => {
       await new Promise((resolve) => {
-        setTimeout(resolve, 300)
+        cy.log('waiting 3 seconds')
+
+        setTimeout(resolve, 3000)
       })
+
+      cy.log('3 seconds passed')
+
       cy.log('made some async action', duckDuckGo)
       cy.log('response status', response.status)
     })
