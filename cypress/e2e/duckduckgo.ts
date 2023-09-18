@@ -23,6 +23,13 @@ Given(/^Duck Duck go world$/, function (this: IDuckDuckGoWorld) {
   this.duckDuckGo.url = "https://duckduckgo.com/";
 
   cy.get('@duckDuckGo').then(async (duckDuckGo) => {
+    await new Promise((resolve) => {
+      cy.log('waiting 1 second')
+
+      setTimeout(resolve, 1000)
+    })
+
+    cy.log('1 seconds passed')
 
     cy.request({
       method: 'GET',
