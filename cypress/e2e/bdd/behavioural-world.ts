@@ -1,1 +1,0 @@
-export type IBehaviouralWorld<Type extends {}> = Type & Mocha.Context;

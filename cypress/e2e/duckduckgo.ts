@@ -1,7 +1,7 @@
 import {Before, Given, Then, When} from "@badeball/cypress-cucumber-preprocessor";
-import {IBehaviouralWorld} from "./bdd/behavioural-world";
+import {IWorld} from "./bdd/i-world";
 
-export type IDuckDuckGoWorld = IBehaviouralWorld<{
+export type IDuckDuckGoWorld = IWorld<{
   duckDuckGo: {
     visited: boolean;
     url: string

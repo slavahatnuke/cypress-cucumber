@@ -1,0 +1,1 @@
+export type IWorld<Type extends Record<string, any>> = Type & Mocha.Context;
