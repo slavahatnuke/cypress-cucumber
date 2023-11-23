@@ -4,23 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test.acceptance.ui": "cypress open --browser chrome",
-    "test.acceptance.ui.wip": "cypress open -e TAGS='@wip' --browser chrome",
-    "test.acceptance": "cypress run --spec **/*.feature",
-    "test.acceptance.wip": "cypress run --spec **/*.feature -e TAGS='@wip'"
+    "test.acceptance": "cypress open",
+    "test.acceptance.wip": "cypress open -e TAGS='@wip'",
+    "test.acceptance.ci": "cypress run --spec **/*.feature",
+    "test.acceptance.ci.wip": "cypress run --spec **/*.feature -e TAGS='@wip'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^13.2.0",
+    "cypress": "^13.6.0",
     "expect": "^29.7.0",
     "lodash": "^4.17.21",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "devDependencies": {
-    "@types/cypress-cucumber-preprocessor": "^4.0.2"
+    "@types/cypress-cucumber-preprocessor": "^4.0.5"
   }
 }
