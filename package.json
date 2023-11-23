@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "test": "cypress run --spec **/*.feature"
+    "open2": "cypress open -e TAGS='@wip'",
+    "test": "cypress run --spec **/*.feature",
+    "test2": "cypress run --spec **/*.feature -e TAGS='@wip'"
   },
   "keywords": [],
   "author": "",
